@@ -1,5 +1,5 @@
 angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.router', 'satellizer'])
-  .config(function($stateProvider, $urlRouterProvider, $authProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $authProvider,$locationProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -57,6 +57,8 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
     $authProvider.twitter({
       url: '/auth/twitter'
     });
+
+    // $locationProvider.html5Mode(true);
 
     function skipIfLoggedIn($q, $auth) {
       var deferred = $q.defer();
