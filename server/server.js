@@ -29,35 +29,32 @@ var userSchema = new mongoose.Schema({
   twitter: String,
 });
 
-// testing .....
 userSchema.pre('validate', function(next) {
   var user = this;
-  if(user.isModified('email')) {
-    User.findOne({email : user.email},function(err, existingUser) {
-      if (existingUser) {
-        if (existingUser.id !== user.id) {
-          console.log('user already exists');
-          var err = new Error('the email already exists');
-          next(err);
-        }
-      }
-    });
-  }
+  User.findOne({email : user.email},function(err, existingUser) {
+    if (existingUser && user && existingUser.id===user.id) {
+      next()
+    } else if (existingUser && user && existingUser.id!==user.id) {
+      user.email = '';
+    }
+  })
   next();
 });
-// testing ..........
 
 userSchema.pre('save', function(next) {
   var user = this;
-  if (!user.isModified('password')) {
-    return next();
-  }
-  bcrypt.genSalt(10, function(err, salt) {
-    bcrypt.hash(user.password, salt, function(err, hash) {
-      user.password = hash;
-      next();
+
+    if (!user.isModified('password')) {
+      return next();
+    }
+    bcrypt.genSalt(10, function(err, salt) {
+      bcrypt.hash(user.password, salt, function(err, hash) {
+        user.password = hash;
+        next();
+      });
     });
-  });
+
+
 });
 
 userSchema.methods.comparePassword = function(password, done) {
@@ -156,15 +153,15 @@ app.put('/api/me', ensureAuthenticated, function(req, res) {
     user.displayName = req.body.displayName || user.displayName;
     user.email = req.body.email || user.email;
     user.save(function(err) {
-      if (!err) {
-        res.status(200).end();
+      if (!err || err.code!==11000) {
+        return res.status(200).end();
       } else {
-        return res.status(409).send({ message: 'The email is already in use by another account' });
+        return res.status(409).send({ message: 'The email is already in use by another account' }).end();
       }
-      
-    });
+    })
   });
 });
+
 
 /*
  |--------------------------------------------------------------------------
