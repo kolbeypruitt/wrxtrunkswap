@@ -12,7 +12,7 @@ angular.module('MyApp')
     $scope.updateProfile = function() {
       Account.updateProfile($scope.user)
         .then(function() {
-          toastr.success('Profile has been updated');
+          toastr.success('Profile has been updated');          
         })
         .catch(function(response) {
           toastr.error(response.data.message, response.status);

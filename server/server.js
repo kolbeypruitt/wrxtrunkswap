@@ -29,10 +29,26 @@ var userSchema = new mongoose.Schema({
   twitter: String,
 });
 
+// testing .....
+userSchema.pre('validate', function(next) {
+  var user = this;
+  if(user.isModified('email')) {
+    User.findOne({email : user.email},function(err, existingUser) {
+      if (existingUser) {
+        if (existingUser.id !== user.id) {
+          console.log('user already exists');
+          var err = new Error('the email already exists');
+          next(err);
+        }
+      }
+    });
+  }
+  next();
+});
+// testing ..........
 
 userSchema.pre('save', function(next) {
   var user = this;
-  // if (user.)
   if (!user.isModified('password')) {
     return next();
   }
@@ -140,7 +156,12 @@ app.put('/api/me', ensureAuthenticated, function(req, res) {
     user.displayName = req.body.displayName || user.displayName;
     user.email = req.body.email || user.email;
     user.save(function(err) {
-      res.status(200).end();
+      if (!err) {
+        res.status(200).end();
+      } else {
+        return res.status(409).send({ message: 'The email is already in use by another account' });
+      }
+      
     });
   });
 });
