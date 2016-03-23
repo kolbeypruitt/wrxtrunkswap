@@ -12,7 +12,7 @@ var jwt = require('jwt-simple');
 var moment = require('moment');
 var mongoose = require('mongoose');
 var request = require('request');
-var config = require('./config');
+var config = require('./config.js');
 require('dotenv').config();
 
 var cars = require('./routes/cars');
@@ -29,8 +29,10 @@ var userSchema = new mongoose.Schema({
   twitter: String,
 });
 
+
 userSchema.pre('save', function(next) {
   var user = this;
+  // if (user.)
   if (!user.isModified('password')) {
     return next();
   }
@@ -135,7 +137,6 @@ app.put('/api/me', ensureAuthenticated, function(req, res) {
     if (!user) {
       return res.status(400).send({ message: 'User not found' });
     }
-
     user.displayName = req.body.displayName || user.displayName;
     user.email = req.body.email || user.email;
     user.save(function(err) {
@@ -143,7 +144,6 @@ app.put('/api/me', ensureAuthenticated, function(req, res) {
     });
   });
 });
-
 
 /*
  |--------------------------------------------------------------------------
@@ -214,6 +214,7 @@ app.post('/auth/google', function(req, res) {
       if (profile.error) {
         return res.status(500).send({message: profile.error.message});
       }
+
       // Step 3a. Link user accounts.
       if (req.header('Authorization')) {
         User.findOne({ google: profile.sub }, function(err, existingUser) {
@@ -226,6 +227,7 @@ app.post('/auth/google', function(req, res) {
             if (!user) {
               return res.status(400).send({ message: 'User not found' });
             }
+          
             user.google = profile.sub;
             user.picture = user.picture || profile.picture.replace('sz=50', 'sz=200');
             user.displayName = user.displayName || profile.name;
@@ -242,6 +244,7 @@ app.post('/auth/google', function(req, res) {
             return res.send({ token: createJWT(existingUser) });
           }
           var user = new User();
+          user.email = profile.email;
           user.google = profile.sub;
           user.picture = profile.picture.replace('sz=50', 'sz=200');
           user.displayName = profile.name;
@@ -444,7 +447,9 @@ app.post('/auth/facebook', function(req, res) {
             var token = createJWT(existingUser);
             return res.send({ token: token });
           }
+
           var user = new User();
+          user.email = profile.email;
           user.facebook = profile.id;
           user.picture = 'https://graph.facebook.com/' + profile.id + '/picture?type=large';
           user.displayName = profile.name;
@@ -542,6 +547,7 @@ app.post('/auth/twitter', function(req, res) {
             }
 
             var user = new User();
+            user.email = profile.email;
             user.twitter = profile.id;
             user.displayName = profile.name;
             user.picture = profile.profile_image_url.replace('_normal', '');
