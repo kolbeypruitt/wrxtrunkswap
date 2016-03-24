@@ -58,7 +58,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       url: '/auth/twitter'
     });
 
-    // $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 
     function skipIfLoggedIn($q, $auth) {
       var deferred = $q.defer();
