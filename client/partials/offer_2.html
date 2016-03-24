@@ -1,0 +1,25 @@
+<div ng-show="offer2current" class="swell" id="offerPage2">
+  <div class="row-fluid">
+    <button type="submit" class="btn btn-default" ng-click="prevOfferPage()">Back</button>
+    <h1 class="text-center">Step 2 of 3</h1>
+    <div class="mileage">
+      <h3>What is your car's mileage?</h3>
+      <input name"mileage" type="number" class="form-control" id="mileage" ng-model="offer.mileage" placeholder="Enter approximate mileage">
+    </div>
+    <div class="location">
+      <h3>What is your location?</h3>
+      <input name"location" type="text" class="form-control" id="location" ng-model="offer.location">
+      <script type="text/javascript">
+        $( document ).ready(function() {
+          $("#location").geocomplete();
+        });
+      </script>
+    </div>
+    <div class="distance">
+      <h3>How far are you willing to travel?</h3>
+      <input name="distance" type="number" class="form-control" ng-model="offer.distance" placeholder="Enter a distance">
+    </div>
+    <br>
+    <a class="btn btn-default btn-lg" ng-click="nextOfferPage()">Next</a>
+  </div>
+</div>

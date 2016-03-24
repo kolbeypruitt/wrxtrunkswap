@@ -1,0 +1,44 @@
+<div ng-show="offer1current" class="swell" id="offerPage1">
+  <div class="row-fluid">
+    <form data-toggle="validator" role="form">
+      <h1 class="text-center">Step 1 of 3</h1>
+      <div class="year form-group">
+        <h3>What year is your car?</h3>
+        <select ng-change="updateTrims()" class="form-control" name="year" ng-model="offer.year" required>
+          <option value="" selected="selected">Select a year</option>
+          <option value="{{year}}" ng-repeat="year in years">{{year}}</option>
+        </select>
+      </div>
+      <div class="trim form-group">
+        <h3>What trim is your car?</h3>
+        <select ng-change="updateColors()" class="form-control" name="trim" ng-model="offer.trim" required>
+          <option value="" selected="selected">Select a trim</option>
+          <option value="{{trim}}" ng-repeat="trim in trims">{{trim}}</option>
+        </select>
+      </div>
+      <div class="color form-group">
+        <h3>What paint color?</h3>
+        <select ng-change="pickColor()" class="form-control" name="color" ng-model="offer.color" required ng-style="{'background-color': colors[offer.color].hex}">
+          <option value="" selected="selected">Select a color</option>
+          <option value="{{$index}}" ng-repeat="color in colors track by $index">{{color.name}}</option>
+        </select>
+      </div>
+      <div class="upload form-group">
+        <h3>Do you have a photo?</h3>
+        <input class="form-control" type="file" name="image" multiple>
+      </div>
+      <div class="pushToStart form-group" ng-show="offer.possiblePTS">
+        <h3>Do you have push to start?</h3>
+        <select class="form-control" name="pushToStart" ng-model="offer.pushToStart" required>
+          <option value="" selected="selected">Select yes or no</option>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+<!--         <button type="submit" class="btn btn-default" ng-click="nextOfferPage()">Next</button> -->
+        <a class="btn btn-default btn-lg" ng-click="nextOfferPage()">Next</a>
+      </div>
+    </form>
+  </div>
+</div>
