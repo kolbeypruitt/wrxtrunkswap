@@ -3,8 +3,8 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
     $stateProvider
       .state('home', {
         url: '/',
-        controller: 'HomeCtrl',
-        templateUrl: 'partials/home.html'
+        templateUrl: 'partials/offer.html',
+        controller: 'HomeCtrl'
       })
       .state('login', {
         url: '/login',
@@ -27,9 +27,9 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
         template: null,
         controller: 'LogoutCtrl'
       })
-      .state('profile', {
-        url: '/profile',
-        templateUrl: 'partials/profile.html',
+      .state('dash', {
+        url: '/dash',
+        templateUrl: 'partials/dash.html',
         controller: 'ProfileCtrl',
         resolve: {
           loginRequired: loginRequired
@@ -38,19 +38,14 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       .state('offer', {
         url: '/offer',
         templateUrl: 'partials/offer.html',
-        controller: 'OfferCtrl',
-        resolve: {
-          loginRequired: loginRequired
-        }
+        controller: 'OfferCtrl'
       })
       .state('search', {
         url: '/search',
         templateUrl: 'partials/search.html',
         controller: 'SearchCtrl'
       })
-      // .otherwise({
-      //   redirectTo: '/'
-      // });
+
 
     $urlRouterProvider.otherwise('/');
 

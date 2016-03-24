@@ -2,37 +2,23 @@
 <html ng-app="MyApp">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WRX TRUNK SWAP</title>
   <link href="images/favicon.png" rel="shortcut icon">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="//cdn.jsdelivr.net/animatecss/3.2.0/animate.css" rel="stylesheet">
   <link href="/css/angular-toastr.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/component.css" />
   <link href="/css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
   <base href="/">
 </head>
 <body>
-<!-- <div ng-controller="NavbarCtrl" class="navbar navbar-default navbar-static-top">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="/#/"><i class="ion-ios7-pulse-strong"></i> WRX Trunk Swap</a>
-  </div>
-  <ul class="nav navbar-nav">
-    <li ng-if="isAuthenticated()"><a href="/#/profile">Profile</a></li>
-  </ul>
-  <ul ng-if="!isAuthenticated()" class="nav navbar-nav pull-right">
-    <li><a href="/login">Login</a></li>
-    <li><a href="/#/signup">Sign up</a></li>
-  </ul>
-  <ul ng-if="isAuthenticated()" class="nav navbar-nav pull-right">
-    <li><a href="/#/logout">Logout</a></li>
-  </ul>
-</div> -->
  <div class="container-fluid">
-   <nav class="navbar navbar-inverted navbar-fixed-top">
+   <nav ng-controller="NavbarCtrl" class="navbar navbar-inverted navbar-fixed-top">
      <!-- Brand and toggle get grouped for better mobile display -->
      <div class="navbar-header">
        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -41,20 +27,23 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
        </button>
-       <a class="navbar-brand" href="/">
+       <a class="navbar-brand" href="/#/">
          <img src="images/wrxts_logo.svg" style="margin-top: -7px; width: 140px; height: 40px;"/>
        </a>
      </div>
      <!-- Collect the nav links, forms, and other content for toggling -->
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <ul class="nav navbar-nav">
-         <li class="active"><a href="" onClick="GBL.clickOffer()"> Offer Trunk <span class="sr-only">(current)</span></a></li>
-         <li><a href="" onClick="GBL.clickSearch()"> Search Trunks </a></li>
+         <li class="active"><a href="/offer" onClick="GBL.clickOffer()"> Offer Trunk <span class="sr-only">(current)</span></a></li>
+         <li><a href="/search" onClick="GBL.clickSearch()"> Search Trunks </a></li>
        </ul>
+
        <ul class="nav navbar-nav navbar-right">
          <li class="active"><a href="" onClick="GBL.clickHelp()"> How it works <span class="sr-only">(current)</span></a></li>
-         <li class="active"><a href="" onClick="GBL.clickDash()"> Dashboard <span class="sr-only">(current)</span></a></li>
-         <li><a href="/login">Login</a></li>
+         <li class="active" ng-if="isAuthenticated()"><a href="/dash" onClick="GBL.clickDash()"> Dashboard <span class="sr-only">(current)</span></a></li>
+         <li ng-if="!isAuthenticated()"><a href="/#/login">Login</a></li>
+         <li ng-if="!isAuthenticated()"><a href="/#/signup">Sign up</a></li>
+         <li ng-if="isAuthenticated()"><a href="/#/logout">Logout</a></li>
          <li class="dropdown">
            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Name <span class="caret"></span></a>
            <ul class="dropdown-menu">
@@ -72,6 +61,8 @@
 <div ui-view></div>
 
 <!-- Third-party Libraries -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="/vendor/angular.js"></script>
 <script src="/vendor/angular-animate.js"></script>
 <script src="/vendor/angular-messages.js"></script>
@@ -79,13 +70,11 @@
 <script src="/vendor/angular-sanitize.js"></script>
 <script src="/vendor/angular-ui-router.js"></script>
 <script src="/vendor/angular-toastr.tpls.js"></script>
+<script src="//rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
 <script src="/vendor/satellizer.js"></script>
 <script src="/vendor/modernizr.custom.js"></script>
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="/vendor/jquery.geocomplete.min.js"></script>
 <script src="//maps.googleapis.com/maps/api/js?&amp;libraries=places"></script>
-<script src="//rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
-
 
 <!-- Application Code -->
 <script src="/app.js"></script>
