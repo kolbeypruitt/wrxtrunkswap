@@ -43,7 +43,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
     });
 
     $authProvider.google({
-      clientId: '882081362187-l36pjcp62mq64a85q0t035fp3002n9v7.apps.googleusercontent.com'
+      clientId: '593154166446-pm5fu87nsn2tkbs8vjh5r9lleaptfcq0.apps.googleusercontent.com'
     });
 
     $authProvider.linkedin({
