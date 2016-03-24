@@ -1,0 +1,174 @@
+{
+  "id": "Subaru_WRX",
+  "name": "WRX",
+  "niceName": "wrx",
+  "years": [{
+    "id": 200485180,
+    "year": 2015,
+    "styles": [{
+      "id": 200678239,
+      "name": "Premium 4dr Sedan AWD (2.0L 4cyl Turbo CVT)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Premium"
+    }, {
+      "id": 200678238,
+      "name": "Premium 4dr Sedan AWD (2.0L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Premium"
+    }, {
+      "id": 200485181,
+      "name": "4dr Sedan AWD (2.0L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Base"
+    }, {
+      "id": 200678240,
+      "name": "Limited 4dr Sedan AWD (2.0L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Limited"
+    }, {
+      "id": 200674084,
+      "name": "STI 4dr Sedan AWD (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "STI",
+        "modelName": "WRX STI",
+        "niceName": "sti"
+      },
+      "trim": "STI"
+    }, {
+      "id": 200678241,
+      "name": "Limited 4dr Sedan AWD (2.0L 4cyl Turbo CVT)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Limited"
+    }, {
+      "id": 200678242,
+      "name": "STI Launch Edition 4dr Sedan AWD (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "STI Launch Edition",
+        "modelName": "WRX STI Launch Edition",
+        "niceName": "sti-launch-edition"
+      },
+      "trim": "STI Launch Edition"
+    }, {
+      "id": 200678243,
+      "name": "STI Limited 4dr Sedan AWD (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "STI Limited",
+        "modelName": "WRX STI Limited",
+        "niceName": "sti-limited"
+      },
+      "trim": "STI Limited"
+    }]
+  }, {
+    "id": 200733182,
+    "year": 2016,
+    "styles": [{
+      "id": 200733190,
+      "name": "STI Limited w/ Low Profile Trunk Spoiler 4dr Sedan AWD (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "STI Limited",
+        "modelName": "WRX STI Limited",
+        "niceName": "sti-limited"
+      },
+      "trim": "STI Limited"
+    }, {
+      "id": 200733183,
+      "name": "Premium 4dr Sedan AWD (2.0L 4cyl Turbo CVT)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Premium"
+    }, {
+      "id": 200733188,
+      "name": "STI 4dr Sedan AWD (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "STI",
+        "modelName": "WRX STI",
+        "niceName": "sti"
+      },
+      "trim": "STI"
+    }, {
+      "id": 200778021,
+      "name": "STI Series.HyperBlue 4dr Sedan AWD (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "STI Series.HyperBlue",
+        "modelName": "WRX STI Series.HyperBlue",
+        "niceName": "sti-serieshyperblue"
+      },
+      "trim": "STI Series.HyperBlue"
+    }, {
+      "id": 200733189,
+      "name": "STI Limited w/Wing 4dr Sedan AWD (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "STI Limited",
+        "modelName": "WRX STI Limited",
+        "niceName": "sti-limited"
+      },
+      "trim": "STI Limited"
+    }, {
+      "id": 200733186,
+      "name": "Limited 4dr Sedan AWD (2.0L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Limited"
+    }, {
+      "id": 200733187,
+      "name": "Limited 4dr Sedan AWD (2.0L 4cyl Turbo CVT)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Limited"
+    }, {
+      "id": 200733184,
+      "name": "Premium 4dr Sedan AWD (2.0L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Premium"
+    }, {
+      "id": 200733185,
+      "name": "4dr Sedan AWD (2.0L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "WRX Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Base"
+    }]
+  }]
+}

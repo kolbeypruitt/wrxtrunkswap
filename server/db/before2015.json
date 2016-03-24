@@ -1,0 +1,1150 @@
+{
+  "id": "Subaru_Impreza",
+  "name": "Impreza",
+  "niceName": "impreza",
+  "years": [{
+    "id": 573,
+    "year": 1993,
+    "styles": [{
+      "id": 8955,
+      "name": "L 4dr Sedan",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 8956,
+      "name": "L 4dr Wagon",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 8957,
+      "name": "L 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 8958,
+      "name": "L 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 8959,
+      "name": "LS 4dr Sedan",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "LS"
+    }, {
+      "id": 8964,
+      "name": "4dr Sedan",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Base"
+    }, {
+      "id": 8960,
+      "name": "LS 4dr Wagon",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "LS"
+    }, {
+      "id": 8961,
+      "name": "LS 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "LS"
+    }, {
+      "id": 8962,
+      "name": "LS 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "LS"
+    }]
+  }, {
+    "id": 1443,
+    "year": 1994,
+    "styles": [{
+      "id": 17962,
+      "name": "L 4dr Wagon",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 17963,
+      "name": "L 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 17961,
+      "name": "L 4dr Sedan",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 17966,
+      "name": "LS 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "LS"
+    }, {
+      "id": 17967,
+      "name": "4dr Sedan",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Base"
+    }, {
+      "id": 17964,
+      "name": "L 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 17965,
+      "name": "LS 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "LS"
+    }]
+  }, {
+    "id": 1444,
+    "year": 1995,
+    "styles": [{
+      "id": 17280,
+      "name": "4dr Sedan",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Base"
+    }, {
+      "id": 17269,
+      "name": "L 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 17268,
+      "name": "L 4dr Sedan",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 17271,
+      "name": "L Special Edition 4dr Sedan",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L Special Edition"
+    }, {
+      "id": 17270,
+      "name": "L 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 17267,
+      "name": "L 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }, {
+      "id": 17266,
+      "name": "L 2dr Coupe",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }, {
+      "id": 17277,
+      "name": "Outback 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback"
+    }, {
+      "id": 17276,
+      "name": "LX 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "LX"
+    }, {
+      "id": 17279,
+      "name": "2dr Coupe",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "Base"
+    }, {
+      "id": 17278,
+      "name": "Outback Special Edition 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Special Edition"
+    }, {
+      "id": 17273,
+      "name": "L Special Editition 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L Special Edition"
+    }, {
+      "id": 17272,
+      "name": "L Special Edition 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L Special Edition"
+    }, {
+      "id": 17275,
+      "name": "LX 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "LX"
+    }, {
+      "id": 17274,
+      "name": "LX 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "LX"
+    }]
+  }, {
+    "id": 1445,
+    "year": 1996,
+    "styles": [{
+      "id": 17366,
+      "name": "Outback 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback"
+    }, {
+      "id": 17364,
+      "name": "LX 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "LX"
+    }, {
+      "id": 17365,
+      "name": "LX 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "LX"
+    }, {
+      "id": 17362,
+      "name": "L 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 17363,
+      "name": "LX 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "LX"
+    }, {
+      "id": 17360,
+      "name": "L 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }, {
+      "id": 17361,
+      "name": "L 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 17359,
+      "name": "Brighton 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "Brighton"
+    }]
+  }, {
+    "id": 574,
+    "year": 1997,
+    "styles": [{
+      "id": 411,
+      "name": "L 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 408,
+      "name": "Outback Sport 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }, {
+      "id": 414,
+      "name": "L 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 404,
+      "name": "Brighton 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "Brighton"
+    }, {
+      "id": 405,
+      "name": "L 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }]
+  }, {
+    "id": 1446,
+    "year": 1998,
+    "styles": [{
+      "id": 14289,
+      "name": "L 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }, {
+      "id": 14292,
+      "name": "RS 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "tuner": "RS",
+        "modelName": "Impreza RS",
+        "niceName": "rs"
+      },
+      "trim": "RS"
+    }, {
+      "id": 14294,
+      "name": "L 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 14297,
+      "name": "L 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 14299,
+      "name": "Outback Sport 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }]
+  }, {
+    "id": 3335,
+    "year": 1999,
+    "styles": [{
+      "id": 12408,
+      "name": "RS 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "tuner": "RS",
+        "modelName": "Impreza RS",
+        "niceName": "rs"
+      },
+      "trim": "RS"
+    }, {
+      "id": 12410,
+      "name": "L 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 13318,
+      "name": "L 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }, {
+      "id": 12422,
+      "name": "Outback Sport 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }, {
+      "id": 12420,
+      "name": "L 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }]
+  }, {
+    "id": 1029,
+    "year": 2000,
+    "styles": [{
+      "id": 1094,
+      "name": "RS 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "RS",
+        "modelName": "Impreza RS",
+        "niceName": "rs"
+      },
+      "trim": "RS"
+    }, {
+      "id": 1095,
+      "name": "L 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 1108,
+      "name": "RS 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "tuner": "RS",
+        "modelName": "Impreza RS",
+        "niceName": "rs"
+      },
+      "trim": "RS"
+    }, {
+      "id": 1107,
+      "name": "L 2dr Coupe AWD",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }, {
+      "id": 5898,
+      "name": "Outback Sport 4dr Wagon AWD",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }, {
+      "id": 18012,
+      "name": "L 4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }]
+  }, {
+    "id": 100000229,
+    "year": 2001,
+    "styles": [{
+      "id": 100001740,
+      "name": "Outback Sport AWD 4dr Wagon (2.2L 4cyl 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }, {
+      "id": 100001741,
+      "name": "Outback Sport AWD 4dr Wagon (2.2L 4cyl 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }, {
+      "id": 100001736,
+      "name": "L AWD 4dr Sedan (2.2L 4cyl 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 100001737,
+      "name": "L AWD 4dr Sedan (2.2L 4cyl 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "L"
+    }, {
+      "id": 100001738,
+      "name": "L AWD 4dr Wagon (2.2L 4cyl 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 100001739,
+      "name": "L AWD 4dr Wagon (2.2L 4cyl 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "L"
+    }, {
+      "id": 100001732,
+      "name": "2.5 RS AWD 4dr Sedan (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.5 RS"
+    }, {
+      "id": 100001733,
+      "name": "2.5 RS AWD 4dr Sedan (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "RS",
+        "modelName": "Impreza RS",
+        "niceName": "rs"
+      },
+      "trim": "2.5 RS"
+    }, {
+      "id": 100001734,
+      "name": "L AWD 2dr Coupe (2.2L 4cyl 4A)",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }, {
+      "id": 100001735,
+      "name": "L AWD 2dr Coupe (2.2L 4cyl 5M)",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "L"
+    }, {
+      "id": 100001730,
+      "name": "2.5 RS AWD 2dr Coupe (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Coupe",
+        "modelName": "Impreza Coupe",
+        "niceName": "coupe"
+      },
+      "trim": "2.5 RS"
+    }, {
+      "id": 100001731,
+      "name": "2.5 RS AWD 2dr Coupe (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Coupe",
+        "tuner": "RS",
+        "modelName": "Impreza RS",
+        "niceName": "rs"
+      },
+      "trim": "2.5 RS"
+    }]
+  }, {
+    "id": 100000341,
+    "year": 2002,
+    "styles": [{
+      "id": 100002231,
+      "name": "Outback Sport AWD 4dr Wagon (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }, {
+      "id": 100002230,
+      "name": "2.5 RS AWD 4dr Sedan (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.5 RS"
+    }, {
+      "id": 100002229,
+      "name": "2.5 RS AWD 4dr Sedan (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.5 RS"
+    }, {
+      "id": 100002238,
+      "name": "TS AWD 4dr Sport Wagon (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "TS"
+    }, {
+      "id": 100002237,
+      "name": "TS AWD 4dr Sport Wagon (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "TS"
+    }, {
+      "id": 100002236,
+      "name": "WRX AWD 4dr Sport Wagon (2.0L 4cyl Turbo 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100002235,
+      "name": "WRX AWD 4dr Sport Wagon (2.0L 4cyl Turbo 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100002234,
+      "name": "WRX AWD 4dr Sedan (2.0L 4cyl Turbo 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100002233,
+      "name": "WRX AWD 4dr Sedan (2.0L 4cyl Turbo 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100002232,
+      "name": "Outback Sport AWD 4dr Wagon (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }]
+  }, {
+    "id": 100502891,
+    "year": 2003,
+    "styles": [{
+      "id": 100161053,
+      "name": "Outback Sport AWD 4dr Wagon (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }, {
+      "id": 100161055,
+      "name": "2.5 RS AWD 4dr Sedan (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.5 RS"
+    }, {
+      "id": 100161054,
+      "name": "Outback Sport AWD 4dr Wagon (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback Sport"
+    }, {
+      "id": 100161062,
+      "name": "WRX AWD 4dr Sedan w/Spoiler (2.0L 4cyl Turbo 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100161063,
+      "name": "WRX AWD 4dr Sport Wagon (2.0L 4cyl Turbo 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100161060,
+      "name": "WRX AWD 4dr Sedan (2.0L 4cyl Turbo 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100161061,
+      "name": "WRX AWD 4dr Sedan w/Spoiler (2.0L 4cyl Turbo 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100161058,
+      "name": "2.5 TS AWD 4dr Sport Wagon (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "2.5 TS"
+    }, {
+      "id": 100161059,
+      "name": "WRX AWD 4dr Sedan (2.0L 4cyl Turbo 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100161056,
+      "name": "2.5 RS AWD 4dr Sedan (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.5 RS"
+    }, {
+      "id": 100161057,
+      "name": "2.5 TS AWD 4dr Sport Wagon (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "2.5 TS"
+    }, {
+      "id": 100161064,
+      "name": "WRX AWD 4dr Sport Wagon (2.0L 4cyl Turbo 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "WRX"
+    }]
+  }, {
+    "id": 100503216,
+    "year": 2004,
+    "styles": [{
+      "id": 100281018,
+      "name": "WRX STi AWD 4dr Sedan w/Silver-Painted Wheels (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "WRX STi",
+        "modelName": "Impreza WRX STi",
+        "niceName": "wrx-sti"
+      },
+      "trim": "WRX STi"
+    }, {
+      "id": 100281017,
+      "name": "WRX STi AWD 4dr Sedan w/Gold-Painted Wheels (2.5L 4cyl Turbo 6M)",
+      "submodel": {
+        "body": "Sedan",
+        "tuner": "WRX STi",
+        "modelName": "Impreza WRX STi",
+        "niceName": "wrx-sti"
+      },
+      "trim": "WRX STi"
+    }, {
+      "id": 100273634,
+      "name": "WRX AWD 4dr Sport Wagon (2.0L 4cyl Turbo 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100273635,
+      "name": "Outback Sport AWD 4dr Wagon (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback"
+    }, {
+      "id": 100273632,
+      "name": "2.5 TS AWD 4dr Sport Wagon (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "2.5"
+    }, {
+      "id": 100273633,
+      "name": "WRX AWD 4dr Sport Wagon (2.0L 4cyl Turbo 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100273636,
+      "name": "Outback Sport AWD 4dr Wagon (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "Outback"
+    }, {
+      "id": 100273625,
+      "name": "2.5 RS AWD 4dr Sedan (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.5"
+    }, {
+      "id": 100273627,
+      "name": "WRX AWD 4dr Sedan (2.0L 4cyl Turbo 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100273626,
+      "name": "2.5 RS AWD 4dr Sedan (2.5L 4cyl 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.5"
+    }, {
+      "id": 100273629,
+      "name": "WRX AWD 4dr Sedan w/Premium Package(2.0L 4cyl Turbo 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100273628,
+      "name": "WRX AWD 4dr Sedan (2.0L 4cyl Turbo 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }, {
+      "id": 100273631,
+      "name": "2.5 TS AWD 4dr Sport Wagon (2.5L 4cyl 5M)",
+      "submodel": {
+        "body": "Wagon",
+        "modelName": "Impreza Wagon",
+        "niceName": "wagon"
+      },
+      "trim": "2.5"
+    }, {
+      "id": 100273630,
+      "name": "WRX AWD 4dr Sedan w/Premium Package (2.0L 4cyl Turbo 4A)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "WRX"
+    }]
+  }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {
+    "id": 401574186,
+    "year": 2016,
+    "styles": [{
+      "id": 401574187,
+      "name": "2.0i Sport Premium PZEV 4dr Hatchback AWD (2.0L 4cyl CVT)",
+      "submodel": {
+        "body": "Hatchback",
+        "modelName": "Impreza Hatchback",
+        "niceName": "hatchback"
+      },
+      "trim": "2.0i Sport Premium PZEV"
+    }, {
+      "id": 401574189,
+      "name": "2.0i Premium PZEV 4dr Hatchback AWD (2.0L 4cyl CVT)",
+      "submodel": {
+        "body": "Hatchback",
+        "modelName": "Impreza Hatchback",
+        "niceName": "hatchback"
+      },
+      "trim": "2.0i Premium PZEV"
+    }, {
+      "id": 401574188,
+      "name": "2.0i Sport Premium PZEV 4dr Hatchback AWD (2.0L 4cyl 5M)",
+      "submodel": {
+        "body": "Hatchback",
+        "modelName": "Impreza Hatchback",
+        "niceName": "hatchback"
+      },
+      "trim": "2.0i Sport Premium PZEV"
+    }, {
+      "id": 401574191,
+      "name": "2.0i PZEV 4dr Sedan AWD (2.0L 4cyl 5M)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.0i PZEV"
+    }, {
+      "id": 401574190,
+      "name": "2.0i Premium PZEV 4dr Sedan AWD (2.0L 4cyl CVT)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.0i Premium PZEV"
+    }, {
+      "id": 401574192,
+      "name": "2.0i PZEV 4dr Sedan AWD (2.0L 4cyl CVT)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.0i PZEV"
+    }, {
+      "id": 401574193,
+      "name": "2.0i Limited PZEV 4dr Sedan AWD (2.0L 4cyl CVT)",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "2.0i Limited PZEV"
+    }, {
+      "id": 401574194,
+      "name": "2.0i PZEV 4dr Hatchback AWD (2.0L 4cyl CVT)",
+      "submodel": {
+        "body": "Hatchback",
+        "modelName": "Impreza Hatchback",
+        "niceName": "hatchback"
+      },
+      "trim": "2.0i PZEV"
+    }, {
+      "id": 401574195,
+      "name": "2.0i PZEV 4dr Hatchback AWD (2.0L 4cyl 5M)",
+      "submodel": {
+        "body": "Hatchback",
+        "modelName": "Impreza Hatchback",
+        "niceName": "hatchback"
+      },
+      "trim": "2.0i PZEV"
+    }, {
+      "id": 401574196,
+      "name": "2.0i Sport Limited PZEV 4dr Hatchback AWD (2.0L 4cyl CVT)",
+      "submodel": {
+        "body": "Hatchback",
+        "modelName": "Impreza Hatchback",
+        "niceName": "hatchback"
+      },
+      "trim": "2.0i Sport Limited PZEV"
+    }, {
+      "id": 401574197,
+      "name": "2.0i Limited PZEV 4dr Hatchback AWD (2.0L 4cyl CVT)",
+      "submodel": {
+        "body": "Hatchback",
+        "modelName": "Impreza Hatchback",
+        "niceName": "hatchback"
+      },
+      "trim": "2.0i Limited PZEV"
+    }]
+  }, {
+    "id": 401597110,
+    "year": 2017,
+    "styles": [{
+      "id": 401597112,
+      "name": "4dr Sedan AWD",
+      "submodel": {
+        "body": "Sedan",
+        "modelName": "Impreza Sedan",
+        "niceName": "sedan"
+      },
+      "trim": "Base"
+    }]
+  }]
+}

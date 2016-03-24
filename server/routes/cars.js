@@ -43,4 +43,8 @@ router.get('/v1/:model/:year/:trim/colors?', function (req, res) {
   })
 })
 
+router.get('*', function(req, res, next) {
+  res.send("You have hit the cars api but we don't understand your query.. please try again...")
+});
+
 module.exports = router;
