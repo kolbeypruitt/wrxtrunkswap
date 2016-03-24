@@ -76,7 +76,7 @@ app.use('/cars', cars);
 
 app.set('port', process.env.PORT || 3000);
 app.use(cors());
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
