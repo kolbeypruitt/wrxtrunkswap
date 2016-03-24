@@ -14,13 +14,7 @@ var mongoose = require('mongoose');
 var request = require('request');
 var config = require('./config.js');
 require('dotenv').config();
-
 var cars = require('./routes/cars');
-
-// var userSchema = require('./models/userSchema.js');
-// var trunkSchema = require('./models/trunkSchema.js');
-// var User = mongoose.model('User', userSchema);
-// var Trunk = mongoose.model('Trunk', trunkSchema);
 
 var User = require('./models/userSchema.js');
 var Trunk = require('./models/trunkSchema.js');
@@ -30,13 +24,21 @@ mongoose.connection.on('error', function(err) {
   console.log('Error: Could not connect to MongoDB. Did you forget to run `mongod`?'.red);
 });
 
+// *** seed the database *** //
+if (process.env.NODE_ENV === 'development') {
+  // var seedUsers = require('./models/seeds/users.js');
+  var seedTrunks = require('./models/seeds/trunks.js');
+  // seedUsers();
+  seedTrunks();
+}
+
 var app = express();
 
 app.use('/cars', cars);
 
 app.set('port', process.env.PORT || 3000);
 app.use(cors());
-// app.use(logger('dev'));
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

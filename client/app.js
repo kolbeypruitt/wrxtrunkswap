@@ -1,5 +1,5 @@
 angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.router', 'satellizer'])
-  .config(function($stateProvider, $urlRouterProvider, $authProvider,$locationProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $authProvider, $locationProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -34,6 +34,23 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
         resolve: {
           loginRequired: loginRequired
         }
+      });
+
+      .state('offer', {
+        url: '/offer',
+        templateUrl: 'partials/offer.html',
+        controller: 'OfferController',
+        resolve: {
+          loginRequired: loginRequired
+        }
+      })
+      .state('search', {
+        url: '/search',
+        templateUrl: 'partials/search.html',
+        controller: 'SearchController'
+      })
+      .otherwise({
+        redirect: '/'
       });
 
     $urlRouterProvider.otherwise('/');
