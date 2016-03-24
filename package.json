@@ -6,7 +6,6 @@
     "start": "node ./server/server.js",
     "test": "karma start"
   },
-  "main": "wrxtrunkswap.js",
   "author": {
     "name": "Kolbey Pruitt",
     "email": "kolbeypruitt@gmail.com",
