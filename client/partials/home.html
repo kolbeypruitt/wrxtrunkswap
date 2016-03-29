@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="css/home.css">
-
-<div class="box-grid">
-  <div  class="single-box" id="offerBtn">
+<div class="box-grid" id="homeThing">
+  <div ui-sref="offer" class="single-box" id="offerBtn">
     <h2></h2>
     <h2 class="text-center">
     <img src="images/offer.svg" style="width: 150px; height: auto;"/>
@@ -41,9 +39,6 @@
     var slctd = $(this);
     slctd.attr('style','z-index: 100;');
     slctd.addClass('big');
-    slctd.on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', 
-          function() {
-            window.location.href='/offer';
-          });
+    slctd.on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd');
   })
 </script>
