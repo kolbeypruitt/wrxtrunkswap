@@ -1,29 +1,49 @@
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-6">
-      <h1 class="text-center">WRX Trunk Swap</h1>
-      <div class="swell">
-        <h3 class="text-center">What would you like to do?</h3>
-        <br>
-        <div class="row-fluid">
-          <div class="col-md-5 text-center">
-            <a class="btn btn-success btn-lg" href="/offer" role="button">
-              Make an Offer
-            </a>
-          </div>
-          <div class="col-md-2 text-center">
-          </div>
-          <div class="col-md-5 text-center">
-            <a class="btn btn-success btn-lg" href="/search" role="button">
-              Search Offers
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-    </div>
+<link rel="stylesheet" href="css/test_style.css">
+
+<div class="box-grid">
+  <div  class="single-box" id="offerBtn">
+    <h2></h2>
+    <h2 class="text-center">
+    <img src="images/offer.svg" style="width: 150px; height: auto;"/>
+    Offer Trunk
+    </h2 class="text-center">
+    <p class="text-center">List your trunk in our database, and get notified when there is a match.</p>
+  </div>
+  <div ui-sref="search" class="single-box" id="searchBtn">
+    <h2></h2>
+    <h2 class="text-center">
+    <img src="images/search.svg" style="width: 100px; height: auto;"/>
+    Search Trunks
+    </h2>
+    <p class="text-center">Search our collection of listings to find the trunk you want.</p>
+  </div>
+  <div ui-sref="help" class="single-box" id="helpBtn">
+    <h2></h2>
+    <h2 class="text-center">
+    <img src="images/help.svg" style="width: 90px; height: auto;"/>
+    How it works
+    </h2>
+    <p class="text-center">Need some help getting started?</p>
+  </div>
+  <div ui-sref="dash" class="single-box" id="dashBtn">
+    <h2></h2>
+    <h2 class="text-center">
+    <img src="images/dashboard.svg" style="width: 180px; height: auto; margin-left: -20px;"/>
+    Dashboard
+    </h2>
+    <p class="text-center">View your personal dashboard.</p>
   </div>
 </div>
+
+<script>
+  $('.single-box').click(function () {
+    var slctd = $(this);
+    slctd.attr('style','z-index: 100;');
+    slctd.addClass('big');
+    slctd.on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', 
+          function() {
+            window.location.href='/offer';
+          });
+  })
+</script>
+<script src="//code.angularjs.org/X.Y.Z/angular-animate.js"></script>
