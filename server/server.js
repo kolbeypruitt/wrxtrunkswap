@@ -43,7 +43,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Force HTTPS on Heroku
-if (app.get('env') === 'production') {
+if (process.env.ENV === 'production') {
   app.use(function(req, res, next) {
     var protocol = req.get('x-forwarded-proto');
     protocol == 'https' ? next() : res.redirect('https://' + req.hostname + req.url);
