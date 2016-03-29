@@ -39,10 +39,6 @@
 
 }
 
-.single-box > * {
-  color: white;
-}
-
 .single-box h2 {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -62,11 +58,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  
-  -webkit-animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  -ms-animation: fadein 3s
-  -o-animation: fadein 3s;
+
   animation: fadein 3s;
 }
 
