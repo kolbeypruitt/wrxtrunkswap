@@ -26,18 +26,18 @@
     <nav ng-controller="NavbarCtrl" class="navbar navbar-inverted navbar-fixed-top">
      <!-- Brand and toggle get grouped for better mobile display -->
      <div class="navbar-header">
-       <button type="button" class="navbar-toggle collapsed" data-toggle="navbar-collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       <a class="navbar-brand" href="/#/">
+         <img src="images/wrxts_logo.svg" style="margin-top: -7px; width: 140px; height: 40px;"/>
+       </a>
+     </div>
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar" aria-expanded="false">
        <span class="sr-only">Toggle navigation</span>
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
        </button>
-       <a class="navbar-brand" href="/#/">
-         <img src="images/wrxts_logo.svg" style="margin-top: -7px; width: 140px; height: 40px;"/>
-       </a>
-     </div>
-     <!-- Collect the nav links, forms, and other content for toggling -->
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="navigationbar">
        <ul class="nav navbar-nav">
          <li class="active"><a href="/#/offer"> Offer Trunk <span class="sr-only">(current)</span></a></li>
          <li><a href="/#/search"> Search Trunks </a></li>
@@ -50,9 +50,9 @@
          <li ng-if="!isAuthenticated()"><a href="/#/signup">Sign up</a></li>
          <li ng-if="isAuthenticated()"><a href="/#/logout">Logout</a></li>
        </ul>
-       </div><!-- /.navbar-collapse -->
-     </nav>
-    </div><!-- /.container-fluid -->
+     </div><!-- /.navbar-collapse -->
+    </nav>
+  </div><!-- /.container-fluid -->
 
     <div ui-view class="main"></div>
 

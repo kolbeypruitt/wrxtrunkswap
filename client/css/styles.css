@@ -69,6 +69,14 @@ ul {
   transition: 0.25s all;
 }
 
+.navbar-toggle {
+  border: 1px solid white;
+}
+
+.navbar-toggle > span.icon-bar {
+  background: white;
+}
+
 .panel {
   border-color: #cfd9D7;
   border-radius: 2px;
