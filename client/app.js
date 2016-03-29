@@ -45,6 +45,11 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
         templateUrl: 'partials/search.html',
         controller: 'SearchCtrl'
       })
+      .state('help', {
+        url: '/help',
+        templateUrl: 'partials/help.html',
+        controller: 'HelpCtrl'
+      })
 
 
     $urlRouterProvider.otherwise('/');

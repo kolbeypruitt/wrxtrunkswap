@@ -1,3 +1,7 @@
 body {
   background: #72CCA7;
 }
+
+.header-spacer {
+  margin-top: 12vh;
+}
