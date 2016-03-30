@@ -45,10 +45,10 @@
 
        <ul class="nav navbar-nav navbar-right">
          <li class="active"><a href="/#/help"> How it works <span class="sr-only">(current)</span></a></li>
-         <li class="active" ng-if="isAuthenticated()"><a href="/dash"> Dashboard <span class="sr-only">(current)</span></a></li>
-         <li ng-if="!isAuthenticated()"><a href="/#/login">Login</a></li>
-         <li ng-if="!isAuthenticated()"><a href="/#/signup">Sign up</a></li>
-         <li ng-if="isAuthenticated()"><a href="/#/logout">Logout</a></li>
+         <li class="active" ng-show="isAuthenticated()"><a href="/dash"> Dashboard <span class="sr-only">(current)</span></a></li>
+         <li ng-show="!isAuthenticated()"><a href="/#/login">Login </a></li>
+         <li ng-show="!isAuthenticated()"><a href="/#/signup">Sign up</a></li>
+         <li ng-show="isAuthenticated()"><a href="/#/logout">Logout {{user.displayName | firstDisplayName}}</a></li>
        </ul>
      </div><!-- /.navbar-collapse -->
     </nav>
@@ -80,7 +80,7 @@
     <script src="/controllers/login.js"></script>
     <script src="/controllers/signup.js"></script>
     <script src="/controllers/logout.js"></script>
-    <script src="/controllers/profile.js"></script>
+    <script src="/controllers/dash.js"></script>
     <script src="/controllers/navbar.js"></script>
     <script src="/controllers/offer.js"></script>
     <script src="/controllers/search.js"></script>

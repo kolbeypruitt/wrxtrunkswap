@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-a {
+li > a {
   color: white;
 }
 
@@ -237,7 +237,7 @@ ul {
 
 /*********************
 * Social Buttons
-*********************/
+********************
 
 .btn-google-plus {
   color: #fff;

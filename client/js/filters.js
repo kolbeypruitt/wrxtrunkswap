@@ -1,5 +1,8 @@
-angular.module('phonecatFilters', []).filter('checkmark', function() {
-  return function(input) {
-    return input ? '\u2713' : '\u2718';
-  };
-});
+angular.module('MyApp')
+  .filter('firstDisplayName', function() {
+    return function(input) {
+      if (input) {
+        return input.split(' ')[0];
+      }
+    };
+  });

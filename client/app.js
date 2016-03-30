@@ -1,5 +1,5 @@
 angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.router', 'satellizer','ngMap'])
-  .config(function($stateProvider, $urlRouterProvider, $authProvider, $locationProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $authProvider, $locationProvider ) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -30,7 +30,7 @@ angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.
       .state('dash', {
         url: '/dash',
         templateUrl: 'partials/dash.html',
-        controller: 'ProfileCtrl',
+        controller: 'DashCtrl',
         resolve: {
           loginRequired: loginRequired
         }
