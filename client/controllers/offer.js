@@ -1,5 +1,6 @@
 angular.module('MyApp')
   .controller('OfferCtrl', function ($scope, $http, $location, $rootScope, NgMap, toastr, $auth) {
+    var PORT = 8000;
     $scope.offer = {};
     $scope.years = [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016];
     $scope.model = 'wrx';
@@ -17,7 +18,7 @@ angular.module('MyApp')
         $scope.offer.trim = null;
       }
       if ($scope.offer.year && !$scope.offer.trim) {
-        $http.get('//localhost:' + process.env.PORT + '/cars/v1/wrx/' + $scope.offer.year + '/trims?').then(function (response) {
+        $http.get('//localhost:' + PORT + '/cars/v1/wrx/' + $scope.offer.year + '/trims?').then(function (response) {
           $scope.trims = response.data;
         });
       }
@@ -25,7 +26,7 @@ angular.module('MyApp')
 
     $scope.updateColors = function () {
       if ($scope.offer.year && $scope.offer.trim) {
-        $http.get('//localhost:' + process.env.PORT + '/cars/v1/wrx/' + $scope.offer.year +'/' + $scope.offer.trim + '/colors?').then(function (response) {
+        $http.get('//localhost:' + PORT + '/cars/v1/wrx/' + $scope.offer.year +'/' + $scope.offer.trim + '/colors?').then(function (response) {
           $scope.colors = response.data;
         });
       }
@@ -55,7 +56,7 @@ angular.module('MyApp')
     $scope.login = function () {
       var data = $scope.loginInfo;
       if (!$scope.user) {
-        $http.post("//localhost:" + process.env.PORT + "/auth/login", data).success(function(data, status) {
+        $http.post("//localhost:" + PORT + "/auth/login", data).success(function(data, status) {
           console.log(data);
         })
       }
