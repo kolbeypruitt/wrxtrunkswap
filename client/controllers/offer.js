@@ -18,7 +18,7 @@ angular.module('MyApp')
         $scope.offer.trim = null;
       }
       if ($scope.offer.year && !$scope.offer.trim) {
-        $http.get('http://localhost:' + PORT + '/cars/v1/wrx/' + $scope.offer.year + '/trims?').then(function (response) {
+        $http.get('http://127.0.0.1:' + PORT + '/cars/v1/wrx/' + $scope.offer.year + '/trims?').then(function (response) {
           $scope.trims = response.data;
         });
       }
@@ -26,7 +26,7 @@ angular.module('MyApp')
 
     $scope.updateColors = function () {
       if ($scope.offer.year && $scope.offer.trim) {
-        $http.get('//localhost:' + PORT + '/cars/v1/wrx/' + $scope.offer.year +'/' + $scope.offer.trim + '/colors?').then(function (response) {
+        $http.get('//127.0.0.1:' + PORT + '/cars/v1/wrx/' + $scope.offer.year +'/' + $scope.offer.trim + '/colors?').then(function (response) {
           $scope.colors = response.data;
         });
       }
@@ -56,7 +56,7 @@ angular.module('MyApp')
     $scope.login = function () {
       var data = $scope.loginInfo;
       if (!$scope.user) {
-        $http.post("//localhost:" + PORT + "/auth/login", data).success(function(data, status) {
+        $http.post("//127.0.0.1:" + PORT + "/auth/login", data).success(function(data, status) {
           console.log(data);
         })
       }
