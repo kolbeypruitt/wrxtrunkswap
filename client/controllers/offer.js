@@ -18,7 +18,7 @@ angular.module('MyApp')
         $scope.offer.trim = null;
       }
       if ($scope.offer.year && !$scope.offer.trim) {
-        $http.get('//localhost:' + PORT + '/cars/v1/wrx/' + $scope.offer.year + '/trims?').then(function (response) {
+        $http.get('http://localhost:' + PORT + '/cars/v1/wrx/' + $scope.offer.year + '/trims?').then(function (response) {
           $scope.trims = response.data;
         });
       }
