@@ -12,7 +12,10 @@ router.get('/v1/:model/:year/trims?', function(req, res) {
   var queryModel = carD.formatModel(model, year);
   var url = edmunds + "/subaru/"+queryModel+"/"+req.params.year+"?fmt=json&api_key=" + process.env.EDMUNDS_API_KEY;
   request(url, function (err, response) {
-    if (err) console.log('err');
+    if (err) {
+      console.log('err');
+      res.send(response.error);
+    }
     var styleIdsAndTrim = carD.loopStyles(response.body);
     // eventually styleIds will need to be looped
     var trimList = carD.makeTrimList(styleIdsAndTrim);
