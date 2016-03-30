@@ -14,13 +14,10 @@ angular.module('MyApp')
         });
     };
 
-    setTimeout(function () {
-      if (!$scope.isAuthenticated()) {
-        return;
-      } else {
-        $scope.getProfile();
-      }
-      $scope.$apply()
-    }, 1000)
+    if (!$scope.isAuthenticated()) {
+      $scope.user = null;
+    } else {
+      $scope.getProfile();
+    }
   
   });
