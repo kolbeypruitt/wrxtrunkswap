@@ -25,3 +25,5 @@ bower_components
 Thumbs.db
 
 .env
+
+npm-debug.log
