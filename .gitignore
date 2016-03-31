@@ -25,5 +25,5 @@ bower_components
 Thumbs.db
 
 .env
-
+# debug log
 npm-debug.log

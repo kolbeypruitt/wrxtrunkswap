@@ -29,7 +29,11 @@ angular.module('MyApp')
     $scope.updateColors = function () {
       if ($scope.offer.year && $scope.offer.trim) {
         $http.get('/cars/v1/wrx/' + $scope.offer.year +'/' + $scope.offer.trim + '/colors?').then(function (response) {
-          $scope.colors = response.data;
+          if (response.status===200) {
+            $scope.colors = response.data;
+          }
+        }).catch(function(response) {
+          toastr.error(response.data.status, response.status);
         });
       }
     }

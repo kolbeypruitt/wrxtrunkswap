@@ -31,21 +31,24 @@ router.get('/v1/:model/:year/:trim/colors?', function (req, res) {
   var queryModel = carD.formatModel(model, year);
   var url = edmunds + "/subaru/"+queryModel+"/"+req.params.year+"?fmt=json&api_key=" + process.env.EDMUNDS_API_KEY;
   request(url, function (err, response) {
-    if (err) console.log('err');
-    var styleIdsAndTrim = carD.loopStyles(response.body);
-    // eventually styleIds will need to be looped
-    console.log("styleIdsAndTrim", styleIdsAndTrim);
-    console.log("trim", trim);
-    var styleId = carD.findStyleId(styleIdsAndTrim, trim);
-    console.log(styleId);
-    var url2 = edmunds + "/styles/"+ styleId +"/colors?fmt=json&api_key=" + process.env.EDMUNDS_API_KEY + "&fmt=json"
-    request(url2, function (err, response) {
-      if (err) console.log('err');
-      var colorList = carD.getColorNames(response.body);
-      res.send(colorList);
-    })
-  })
-})
+    if (response.statusCode!==200) {
+      res.status(403).send(body);
+    } else {
+      var styleIdsAndTrim = carD.loopStyles(response.body);
+      // eventually styleIds will need to be looped
+      var styleId = carD.findStyleId(styleIdsAndTrim, trim);
+      var url2 = edmunds + "/styles/"+ styleId +"/colors?fmt=json&api_key=" + process.env.EDMUNDS_API_KEY + "&fmt=json"
+      request(url2, function (err, response) {
+        if (response.statusCode!==200) {
+          res.status(403).send(body);
+        } else {
+          var colorList = carD.getColorNames(response.body);
+          res.send(colorList);
+        }
+      });
+    }
+  });
+});
 
 router.get('*', function(req, res, next) {
   res.send("You have hit the cars api but we don't understand your query.. please try again...")
