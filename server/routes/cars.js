@@ -10,16 +10,18 @@ router.get('/v1/:model/:year/trims?', function(req, res) {
   var year = req.params.year;
   var model = req.params.model;
   var queryModel = carD.formatModel(model, year);
-  var url = edmunds + "/subaru/"+queryModel+"/"+req.params.year+"?fmt=json&api_key=" + process.env.EDMUNDS_API_KEY;
-  request(url, function (err, response) {
-    if (err) {
-      console.log('err');
-      res.send(response.error);
+  var url = edmunds + "/subaru/"+queryModel+"/"+req.params.year+"?fmt=json&api_key=8" + process.env.EDMUNDS_API_KEY;
+  request(url, function (err, response, body) {
+    if (response.statusCode!==200) {
+      console.log(body);
+      res.status(403).send(body);
+    } else {
+      var styleIdsAndTrim = carD.loopStyles(response.body);
+      // eventually styleIds will need to be looped
+      var trimList = carD.makeTrimList(styleIdsAndTrim);
+      res.send(trimList);
     }
-    var styleIdsAndTrim = carD.loopStyles(response.body);
-    // eventually styleIds will need to be looped
-    var trimList = carD.makeTrimList(styleIdsAndTrim);
-    res.send(trimList);
+    
   })
 })
 

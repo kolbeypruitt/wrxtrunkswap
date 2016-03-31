@@ -9,7 +9,6 @@ angular.module('MyApp')
       if ($scope.offer.year >= 2013) {
         $scope.offer.possiblePTS = true;
       }
-
       if ($scope.offer.color) {
         $scope.offer.color = null;
       }
@@ -18,7 +17,11 @@ angular.module('MyApp')
       }
       if ($scope.offer.year && !$scope.offer.trim) {
         $http.get('/cars/v1/wrx/' + $scope.offer.year + '/trims?').then(function (response) {
-          $scope.trims = response.data;
+          if (response.status===200) {
+            $scope.trims = response.data;
+          }
+        }).catch(function(response) {
+          toastr.error(response.data.status, response.status);
         });
       }
     }
