@@ -7,7 +7,7 @@ var s3 = require('s3');
 require('dotenv').config();
 
 
-
+// start of file upload to my server fs
 var storage = multer.diskStorage({ //multers disk storage settings
     destination: function (req, file, cb) {
         cb(null, './uploads/');
@@ -28,18 +28,21 @@ router.post('/upload', function(req, res) {
 
     upload(req,res,function(err){
         if(err){
-             res.json({error_code:1,err_desc:err});
-             return;
+            res.json({error_code:1,err_desc:err});
+            return;
         }
-        uploadToS3(req.file.filename);
-        // res.json({error_code:0,err_desc:null});
+        uploadToS3(req.file.filename, function () {
+            res.json({error_code:0,err_desc:null});
+        });
+        
     })
     
 })
+// end of file upload to my server fs
 
 
-// start of S3 upload code
-function uploadToS3 (file) {
+// start of S3 upload from my fs
+function uploadToS3 (file, cb) {
     console.log(file)
   var client = s3.createClient({
     maxAsyncS3: 20,     // this is the default
@@ -78,7 +81,9 @@ function uploadToS3 (file) {
   });
   uploader.on('end', function() {
     console.log("done uploading");
+    return cb();
   });
 }
+// end of S3 upload from my fs
 
 module.exports = router;
