@@ -14,7 +14,9 @@ var mongoose = require('mongoose');
 var request = require('request');
 var config = require('./config.js');
 require('dotenv').config();
+
 var cars = require('./routes/cars');
+var trunks = require('./routes/trunks');
 
 var User = require('./models/userSchema.js');
 var Trunk = require('./models/trunkSchema.js');
@@ -35,6 +37,7 @@ if (process.env.NODE_ENV === 'development') {
 var app = express();
 
 app.use('/cars', cars);
+app.use('/trunks', trunks);
 
 app.set('port', process.env.PORT || 3000);
 app.use(cors());
@@ -50,6 +53,7 @@ if (app.get('env') === 'production') {
   });
 }
 app.use(express.static(path.join(__dirname, '../client')));
+
 
 /*
  |--------------------------------------------------------------------------

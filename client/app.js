@@ -1,4 +1,11 @@
-angular.module('MyApp', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr', 'ui.router', 'satellizer','ngMap'])
+angular.module('MyApp', ['ngResource',
+                         'ngMessages',
+                         'ngAnimate',
+                         'toastr',
+                         'ui.router',
+                         'satellizer',
+                         'ngMap',
+                         'ngFileUpload'])
   .config(function($stateProvider, $urlRouterProvider, $authProvider, $locationProvider ) {
     $stateProvider
       .state('home', {

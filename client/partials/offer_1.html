@@ -23,10 +23,6 @@
           <option value="{{$index}}" ng-repeat="color in colors track by $index">{{color.name}}</option>
         </select>
       </div>
-      <div class="upload form-group">
-        <h3>Do you have a photo?</h3>
-        <input class="form-control" type="file" name="image" multiple>
-      </div>
       <div class="pushToStart form-group" ng-show="offer.possiblePTS">
         <h3>Do you have push to start?</h3>
         <select class="form-control" name="pushToStart" ng-model="offer.pushToStart" required>
@@ -35,10 +31,32 @@
           <option value="false">No</option>
         </select>
       </div>
+    </form>
+    <div class="upload form-group">
+      <form  ng-controller="UploadCtrl as up" name="up.upload_form">
+              <h3>Do you have a photo?</h3>
+          <input 
+              type="file" 
+              ngf-select 
+              ng-model="up.file" 
+              name="file" 
+              ngf-pattern="'image/*'"
+              accept="image/*" 
+              ngf-max-size="20MB" 
+              />
+          Image thumbnail: <img style="width:100px;" ng-show="!!up.file" ngf-thumbnail="up.file || '/thumb.jpg'"/>
+          <i ng-show="up.upload_form.file.$error.required">*required</i><br>
+          <i ng-show="up.upload_form.file.$error.maxSize">File too large 
+          {{up.file.size / 1000000|number:1}}MB: max 20M</i>
+         <!--  Multiple files
+          <div class="button" ngf-select ng-model="up.files" ngf-multiple="true">Select</div>
+          Drop files: <div ngf-drop ng-model="up.files" class="drop-box">Drop</div> -->
+          <button type="submit" ng-click="up.submit()">submit</button>
+          <p>{{up.progress}}</p>
+      </form>
       <div class="form-group">
-<!--         <button type="submit" class="btn btn-default" ng-click="nextOfferPage()">Next</button> -->
         <a class="btn btn-default btn-lg" ng-click="nextOfferPage()">Next</a>
       </div>
-    </form>
+    </div>
   </div>
 </div>
