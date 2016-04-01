@@ -15,6 +15,7 @@ var request = require('request');
 var config = require('./config.js');
 var s3 = require('s3');
 require('dotenv').config();
+var schedTasks = require('./lib/schedTasks.js');
 
 var cars = require('./routes/cars');
 var trunks = require('./routes/trunks');
@@ -34,6 +35,23 @@ if (process.env.NODE_ENV === 'development') {
   // seedUsers();
   seedTrunks();
 }
+
+// 
+// 
+var CronJob = require('cron').CronJob;
+
+var clearLocalUploads = new CronJob({
+  cronTime: '00 30 01 * * 1-5',
+  onTick: function() {
+    console.log('it works now!')
+    schedTasks.rmDir(path.join(__dirname, '../uploads/'));
+  },
+  start: false,
+  timeZone: 'America/Denver'
+});
+clearLocalUploads.start();
+// 
+// 
 
 var app = express();
 
