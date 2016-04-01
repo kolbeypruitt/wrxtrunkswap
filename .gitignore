@@ -27,3 +27,6 @@ Thumbs.db
 .env
 # debug log
 npm-debug.log
+
+# temp storage for trunk photos
+uploads
