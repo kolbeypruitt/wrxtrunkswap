@@ -42,19 +42,6 @@ angular.module('MyApp')
                   file: file
               }
 
-              key // the key to store the file on S3, could be file name or customized
-              acl, // sets the access to the uploaded file in the bucket: private, public-read, .
-              policy //as described here
-
-              'X-amz-credential' //also described in the link above
-
-              'X-amz-algorithm': 'AWS4-HMAC-SHA256'
-              'X-amz-date': //as described in the link above
-              'X-amz-expires': //as described in the link above
-              'X-amz-signature': //as described in the link above
-              'Content-Type': file.type !== '' ? file.type : 'application/octet-stream', // content type of the file (NotEmpty)
-              file: file //the actual file object to be uploaded
-
           }).then(function (resp) { //upload function returns a promise
             console.log(resp)
               if(resp.data.error_code === 0){ //validate success
