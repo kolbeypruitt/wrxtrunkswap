@@ -1,6 +1,6 @@
 <div ng-show="offer1current" class="swell" id="offerPage1">
   <div class="row-fluid">
-    <form data-toggle="validator" role="form">
+    <form data-toggle="validator" role="form" id="offer1form" name="offer1form">
       <h1 class="text-center">Step 1 of 3</h1>
       <div class="year form-group">
         <h3>What year is your car?</h3>
@@ -25,7 +25,7 @@
       </div>
       <div class="pushToStart form-group" ng-show="offer.possiblePTS">
         <h3>Do you have push to start?</h3>
-        <select class="form-control" name="pushToStart" ng-model="offer.pushToStart" required>
+        <select class="form-control" name="pushToStart" ng-model="offer.pushToStart">
           <option value="" selected="selected">Select yes or no</option>
           <option value="true">Yes</option>
           <option value="false">No</option>
@@ -68,7 +68,7 @@
         </form>
       </div>
       <br>
-      <button class="btn btn-default btn-lg" ng-click="nextOfferPage()">Next</button>
+      <button type="submit" form="offer1form" class="btn btn-default btn-lg" ng-click="nextOfferPage()">Next</button>
     </div>
   </div>
 </div>
