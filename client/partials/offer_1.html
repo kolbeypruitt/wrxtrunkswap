@@ -33,72 +33,69 @@
       </div>
     </form>
     <div class="upload form-group">
-      <form  ng-controller="UploadCtrl as up" name="up.upload_form">
-              <h3>Do you have a photo?</h3>
-          <input 
-              type="file" 
-              ngf-select 
-              ng-model="up.file" 
-              name="file" 
-              ngf-pattern="'image/*'"
-              accept="image/*" 
-              ngf-max-size="20MB" 
-              />
-          <img style="width:100px;" ng-show="!!up.file" ngf-thumbnail="up.file || 'images/no-thumbnail.png'"/>
-          <i ng-show="up.upload_form.file.$error.required">*required</i>
-          <br>
-          <i ng-show="up.upload_form.file.$error.maxSize">File too large 
-          {{up.file.size / 1000000|number:1}}MB: max 20M</i>
-         <!--  Multiple files
-          <div class="button" ngf-select ng-model="up.files" ngf-multiple="true">Select</div>
-          Drop files: <div ngf-drop ng-model="up.files" class="drop-box">Drop</div> -->
+      <div class="container nopadding">
+        <form  ng-controller="UploadCtrl as up" name="up.upload_form">
+          <h3>photos here please</h3>
+          <div class="zone" ngf-drop ng-model="up.file">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="selectFile">
+                  <label for="file">Select file</label>
+                  <p>{{up.progress}}</p>                 
+                  <input 
+                    type="file" 
+                    ngf-select 
+                    ng-model="up.file" 
+                    name="file" 
+                    ngf-pattern="'image/*'"
+                    accept="image/*" 
+                    ngf-max-size="20MB" 
+                    id="file"
+                    />
+                </div>
+              </div>
+              <div class="col-md-6 dropArea">
+                <img style="width:180px; margin: 10px 0;" ng-show="up.file" ngf-thumbnail="up.file"/>
+                <i ng-hide="up.file" class="fa fa-cloud-upload"></i>
+                <i ng-show="up.upload_form.file.$error.required">*required</i>
+                <p ng-hide="up.file">Drag and drop your file here</p>
+                <p ng-hide="up.file">File size limit : 10 MB</p>
+              </div>
+            </div>
+          </div>
           <button class="btn btn-default btn-lg" type="submit" ng-click="up.submit()">submit</button>
-          <p>{{up.progress}}</p>
-      </form>
+        </form>
         <button class="btn btn-default btn-lg" ng-click="nextOfferPage()">Next</button>
-    </div>
-  </div>
-</div>
-
-<div class="zone">
-  <div id="dropZ">
-    <div class="selectFile">       
-      <label for="file">Select file</label>                   
-      <input type="file" name="files[]" id="file">
-    </div>
-    <div class="pull-right">
-      <i class="fa fa-cloud-upload"></i>
-      Drag and drop your file here
-      <p>File size limit : 10 MB</p>
+      </div>
     </div>
   </div>
 </div>
 <script>
   $(document).bind('dragover', function (e) {
-      var dropZone = $('.zone'),
-          timeout = window.dropZoneTimeout;
-      if (!timeout) {
-          dropZone.addClass('in');
-      } else {
-          clearTimeout(timeout);
-      }
-      var found = false,
-          node = e.target;
-      do {
-          if (node === dropZone[0]) {
-              found = true;
-              break;
-          }
-          node = node.parentNode;
-      } while (node != null);
-      if (found) {
-          dropZone.addClass('hover');
-      } else {
-          dropZone.removeClass('hover');
-      }
-      window.dropZoneTimeout = setTimeout(function () {
-          window.dropZoneTimeout = null;
-          dropZone.removeClass('in hover');
-      }, 100);
+    var dropZone = $('.zone'),
+        timeout = window.dropZoneTimeout;
+    if (!timeout) {
+        dropZone.addClass('in');
+    } else {
+        clearTimeout(timeout);
+    }
+    var found = false,
+        node = e.target;
+    do {
+        if (node === dropZone[0]) {
+            found = true;
+            break;
+        }
+        node = node.parentNode;
+    } while (node != null);
+    if (found) {
+        dropZone.addClass('hover');
+    } else {
+        dropZone.removeClass('hover');
+    }
+    window.dropZoneTimeout = setTimeout(function () {
+        window.dropZoneTimeout = null;
+        dropZone.removeClass('in hover');
+    }, 100);
   });
 </script>

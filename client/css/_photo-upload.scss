@@ -1,0 +1,141 @@
+//colors
+$color_athens_gray_approx: #ebeff2;
+$color_terracotta_approx: #72CCA7;
+$color_flush_mahogany_approx: #00bCE8;
+$white:  white;
+$white_5: rgba(255, 255, 255, 0.05);
+$black_25: rgba(0, 0, 0, 0.25);
+$gray:  gray;
+
+//fonts
+$font_0: Exo 2;
+
+// body {
+  // height: 100vh;
+// }
+
+//urls
+
+//@extend-elements
+//original selectors
+//.zone label, .zone input
+%extend_1 {
+  // cursor: pointer;
+  // display: block;
+  // height: 50px;
+  // left: 0;
+  // position: absolute;
+  // top: 0;
+  width: 100%;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 5px;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,700,500,300);
+
+.zone {
+  // margin: auto;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
+  background: radial-gradient(ellipse at center, $color_terracotta_approx 0, $color_flush_mahogany_approx 100%);
+  width: 100%;
+  height: 30%;
+  border: 5px dashed $white;
+  text-align: center;
+  color: $white;
+  z-index: 20;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all 0.3s ease-out;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 0 0 1px $white_5, inset 0 0 0.25em 0 $black_25;
+  i {
+    text-align: right;
+    font-size: 10em;
+    color: $white;
+    margin-top: 2px;
+    margin-bottom: -3px;
+    font-size: 5em;
+  }
+  .selectFile {
+    height: 60px;
+    margin: 30px auto;
+    position: relative;
+    width: 200px;
+  }
+  label {
+    @extend %extend_1;
+    background: $white;
+    color: $color_terracotta_approx;
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 400;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 1px 1px $gray;
+  }
+  
+  input {
+    @extend %extend_1;
+  }
+  input[type=file] {
+    opacity: 0;
+  }
+  &.in {
+    color: $white;
+    border-color: $white;
+    background: radial-gradient(ellipse at center, $color_terracotta_approx 0, $color_flush_mahogany_approx 100%);
+    i {
+      color: $white;
+    }
+    label {
+      background: $white;
+      color: $color_terracotta_approx;
+    }
+  }
+  &.hover {
+    color: $gray;
+    border-color: $white;
+    background: $white;
+    border: 5px dashed $gray;
+    i {
+      color: $color_terracotta_approx;
+    }
+    label {
+      background: $white;
+      color: $color_terracotta_approx;
+    }
+  }
+  &.fade {
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all 0.3s ease-out;
+    opacity: 1;
+  }
+  .btnCompression .active {
+    background: $color_terracotta_approx;
+    color: $white;
+  }
+
+  .dropArea {
+    p {
+      margin: 0 0;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .nopadding {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 30px;
+    margin-right: 30px;
+  }
+}
