@@ -30,3 +30,7 @@ npm-debug.log
 
 # temp storage for trunk photos
 uploads
+
+# Sass #
+###########
+*.sass-cache*
