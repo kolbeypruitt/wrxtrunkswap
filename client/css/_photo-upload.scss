@@ -1,7 +1,6 @@
 //colors
 $color_athens_gray_approx: #ebeff2;
-$color_terracotta_approx: #00bCE8;
-$color_flush_mahogany_approx: #00bCE8;
+$color_blueish: #00DCE8;
 $white:  white;
 $white_5: rgba(255, 255, 255, 0.05);
 $black_25: rgba(0, 0, 0, 0.25);
@@ -13,7 +12,7 @@ $font_0: Exo 2;
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,700,500,300);
 
 .zone {
-  background: $color_terracotta_approx;
+  background: $color_blueish;
   width: 100%;
   height: 30%;
   border: 5px dashed $white;
@@ -23,7 +22,7 @@ $font_0: Exo 2;
   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
   transition: all 0.3s ease-out;
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  box-shadow: 0 0 0 1px $white_5, inset 0 0 0.25em 0 $black_25;
+  // box-shadow: 0 0 0 1px $white_5, inset 0 0 0.25em 0 $black_25;
   i {
     text-align: right;
     font-size: 10em;
@@ -42,7 +41,7 @@ $font_0: Exo 2;
     width: 100%;
     border-radius: 5px;
     background: $white;
-    color: $color_terracotta_approx;
+    color: $color_blueish;
     display: inline-block;
     font-size: 1.2em;
     line-height: 50px;
@@ -63,13 +62,13 @@ $font_0: Exo 2;
   &.in {
     color: $white;
     border-color: $white;
-    background: $color_terracotta_approx;
+    background: $color_blueish;
     i {
       color: $white;
     }
     label {
       background: $white;
-      color: $color_terracotta_approx;
+      color: $color_blueish;
     }
   }
   &.hover {
@@ -78,11 +77,11 @@ $font_0: Exo 2;
     background: $white;
     border: 5px dashed $gray;
     i {
-      color: $color_terracotta_approx;
+      color: $color_blueish;
     }
     label {
       background: $white;
-      color: $color_terracotta_approx;
+      color: $color_blueish;
     }
   }
   &.fade {
@@ -91,7 +90,7 @@ $font_0: Exo 2;
     opacity: 1;
   }
   .btnCompression .active {
-    background: $color_terracotta_approx;
+    background: $color_blueish;
     color: $white;
   }
 

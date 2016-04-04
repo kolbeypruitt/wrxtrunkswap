@@ -35,7 +35,7 @@
     <div class="upload form-group">
       <div class="container nopadding">
         <form  ng-controller="UploadCtrl as up" name="up.upload_form">
-          <h3>photos here please</h3>
+          <h3>Want to show a photo?</h3>
           <div class="zone" ngf-drop ng-model="up.file">
             <div class="row">
               <div class="col-md-6">
@@ -49,7 +49,7 @@
                     name="file" 
                     ngf-pattern="'image/*'"
                     accept="image/*" 
-                    ngf-max-size="20MB" 
+                    ngf-max-size="10MB" 
                     id="file"
                     />
                 </div>
@@ -63,10 +63,12 @@
               </div>
             </div>
           </div>
+          <br>
           <button class="btn btn-default btn-lg" type="submit" ng-click="up.submit()">submit</button>
         </form>
-        <button class="btn btn-default btn-lg" ng-click="nextOfferPage()">Next</button>
       </div>
+      <br>
+      <button class="btn btn-default btn-lg" ng-click="nextOfferPage()">Next</button>
     </div>
   </div>
 </div>

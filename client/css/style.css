@@ -5082,15 +5082,14 @@ body {
   margin-top: 12vh; }
 
 .zone {
-  background: #00bCE8;
+  background: #00DCE8;
   width: 100%;
   height: 30%;
   border: 5px dashed white;
   text-align: center;
   color: white;
   z-index: 20;
-  transition: all 0.3s ease-out;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25); }
+  transition: all 0.3s ease-out; }
   .zone i {
     text-align: right;
     font-size: 10em;
@@ -5107,7 +5106,7 @@ body {
     width: 100%;
     border-radius: 5px;
     background: white;
-    color: #00bCE8;
+    color: #00DCE8;
     display: inline-block;
     font-size: 1.2em;
     line-height: 50px;
@@ -5124,27 +5123,27 @@ body {
   .zone.in {
     color: white;
     border-color: white;
-    background: #00bCE8; }
+    background: #00DCE8; }
     .zone.in i {
       color: white; }
     .zone.in label {
       background: white;
-      color: #00bCE8; }
+      color: #00DCE8; }
   .zone.hover {
     color: gray;
     border-color: white;
     background: white;
     border: 5px dashed gray; }
     .zone.hover i {
-      color: #00bCE8; }
+      color: #00DCE8; }
     .zone.hover label {
       background: white;
-      color: #00bCE8; }
+      color: #00DCE8; }
   .zone.fade {
     transition: all 0.3s ease-out;
     opacity: 1; }
   .zone .btnCompression .active {
-    background: #00bCE8;
+    background: #00DCE8;
     color: white; }
   .zone .dropArea p {
     margin: 0 0; }
