@@ -1,6 +1,6 @@
 //colors
 $color_athens_gray_approx: #ebeff2;
-$color_terracotta_approx: #72CCA7;
+$color_terracotta_approx: #00bCE8;
 $color_flush_mahogany_approx: #00bCE8;
 $white:  white;
 $white_5: rgba(255, 255, 255, 0.05);
@@ -10,38 +10,10 @@ $gray:  gray;
 //fonts
 $font_0: Exo 2;
 
-// body {
-  // height: 100vh;
-// }
-
-//urls
-
-//@extend-elements
-//original selectors
-//.zone label, .zone input
-%extend_1 {
-  // cursor: pointer;
-  // display: block;
-  // height: 50px;
-  // left: 0;
-  // position: absolute;
-  // top: 0;
-  width: 100%;
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: 5px;
-}
-
-
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,700,500,300);
 
 .zone {
-  // margin: auto;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // bottom: 0;
-  // right: 0;
-  background: radial-gradient(ellipse at center, $color_terracotta_approx 0, $color_flush_mahogany_approx 100%);
+  background: $color_terracotta_approx;
   width: 100%;
   height: 30%;
   border: 5px dashed $white;
@@ -67,7 +39,8 @@ $font_0: Exo 2;
     width: 200px;
   }
   label {
-    @extend %extend_1;
+    width: 100%;
+    border-radius: 5px;
     background: $white;
     color: $color_terracotta_approx;
     display: inline-block;
@@ -82,16 +55,15 @@ $font_0: Exo 2;
     box-shadow: 0 1px 1px $gray;
   }
   
-  input {
-    @extend %extend_1;
-  }
   input[type=file] {
+    width: 100%;
+    border-radius: 5px;
     opacity: 0;
   }
   &.in {
     color: $white;
     border-color: $white;
-    background: radial-gradient(ellipse at center, $color_terracotta_approx 0, $color_flush_mahogany_approx 100%);
+    background: $color_terracotta_approx;
     i {
       color: $white;
     }

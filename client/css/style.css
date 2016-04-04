@@ -5081,12 +5081,8 @@ body {
 .header-spacer {
   margin-top: 12vh; }
 
-.zone label, .zone input {
-  width: 100%;
-  border-radius: 5px; }
-
 .zone {
-  background: radial-gradient(ellipse at center, #72CCA7 0, #00bCE8 100%);
+  background: #00bCE8;
   width: 100%;
   height: 30%;
   border: 5px dashed white;
@@ -5108,8 +5104,10 @@ body {
     position: relative;
     width: 200px; }
   .zone label {
+    width: 100%;
+    border-radius: 5px;
     background: white;
-    color: #72CCA7;
+    color: #00bCE8;
     display: inline-block;
     font-size: 1.2em;
     line-height: 50px;
@@ -5120,31 +5118,33 @@ body {
     font-weight: 400;
     box-shadow: 0 1px 1px gray; }
   .zone input[type=file] {
+    width: 100%;
+    border-radius: 5px;
     opacity: 0; }
   .zone.in {
     color: white;
     border-color: white;
-    background: radial-gradient(ellipse at center, #72CCA7 0, #00bCE8 100%); }
+    background: #00bCE8; }
     .zone.in i {
       color: white; }
     .zone.in label {
       background: white;
-      color: #72CCA7; }
+      color: #00bCE8; }
   .zone.hover {
     color: gray;
     border-color: white;
     background: white;
     border: 5px dashed gray; }
     .zone.hover i {
-      color: #72CCA7; }
+      color: #00bCE8; }
     .zone.hover label {
       background: white;
-      color: #72CCA7; }
+      color: #00bCE8; }
   .zone.fade {
     transition: all 0.3s ease-out;
     opacity: 1; }
   .zone .btnCompression .active {
-    background: #72CCA7;
+    background: #00bCE8;
     color: white; }
   .zone .dropArea p {
     margin: 0 0; }
