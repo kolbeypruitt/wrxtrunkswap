@@ -1,10 +1,10 @@
 <div ng-show="offer3current" class="swell" id="offerPage3">
-  <form  data-toggle="validator" role="form" id="offer3form">
+  <form  data-toggle="validator" role="form" id="offer3form" name="offer3form">
     <button class="btn btn-default btn-lg" ng-click="prevOfferPage()">Back</button>
     <div class="row-fluid">
       <h1 class="text-center">Step 3 of 3</h1>
       <div class="desiredStyle">
-        <h3>Which   style do you want?</h3>
+        <h3>Which style do you want?</h3>
         <select ng-change="" class="form-control" name="desiredStyle" ng-model="offer.desiredStyle">
           <option value="" selected="selected">Select desired style</option>
           <option value="{{$index}}" ng-repeat="thing in things track by $index">{{thing}}</option>

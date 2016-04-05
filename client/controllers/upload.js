@@ -1,10 +1,11 @@
 angular.module('MyApp')
   .controller('UploadCtrl', function($scope, Upload, $window){
       var $scope = this;
+      
       $scope.submit = function(){ //function to call on form submit
-          if ($scope.upload_form.file.$valid && $scope.file) { //check if from is valid
-              $scope.upload($scope.file); //call upload function
-          }
+        if ($scope.upload_form.file.$valid && $scope.file) { //check if from is valid
+            $scope.upload($scope.file); //call upload function
+        }
       }
       
       $scope.upload = function (file) {

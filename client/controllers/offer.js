@@ -42,8 +42,9 @@ angular.module('MyApp')
     }
 
     $scope.nextOfferPage = function () {
-      $('button[type=submit]').click(function(){
-          $(this).attr('disabled', 'disabled');
+      $('button[type=submit]').click(function(event){
+        // event.preventDefault();
+        // $(this).attr('disabled', 'disabled');
       });
       if ($scope.offer.year && $scope.offer.trim && $scope.offer.color && $scope.offer1current) {
         $scope.offer1current = false;

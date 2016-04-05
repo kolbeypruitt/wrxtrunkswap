@@ -1,24 +1,24 @@
 <div ng-show="offer2current" class="swell" id="offerPage2">
   <div class="row-fluid">
-    <form data-toggle="validator" role="form" id="offer2form">
-      <button class="btn btn-default btn-lg" ng-click="prevOfferPage()">Back</button>
+    <form data-toggle="validator" role="form" id="offer2form" name="offer2form">
       <h1 class="text-center">Step 2 of 3</h1>
-      <div class="mileage">
+      <button class="btn btn-default btn-lg" ng-click="prevOfferPage()">Back</button>
+      <div class="mileage form-group">
         <h3>What is your car's mileage?</h3>
-        <input name"mileage" type="number" class="form-control" id="mileage" ng-model="offer.mileage" placeholder="Enter approximate mileage">
+        <input name"mileage" type="number" class="form-control" id="mileage" ng-model="offer.mileage" placeholder="Enter approximate mileage" required>
       </div>
-      <div class="location">
+      <div class="location form-group">
         <h3>What is your location?</h3>
-        <input name"location" type="text" class="form-control" id="location" ng-model="offer.location">
+        <input name"location" type="text" class="form-control" id="location" ng-model="offer.location" required>
         <script type="text/javascript">
           $( document ).ready(function() {
             $("#location").geocomplete();
           });
         </script>
       </div>
-      <div class="distance">
+      <div class="distance form-group">
         <h3>How far are you willing to travel?</h3>
-        <input name="distance" type="number" class="form-control" ng-model="offer.distance" placeholder="Enter a distance">
+        <input name="distance" type="number" class="form-control" ng-model="offer.distance" placeholder="Enter a distance" required>
       </div>
       <br>
     </form>

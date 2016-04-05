@@ -40,7 +40,7 @@
          <li class="active" ng-show="isAuthenticated()"><a href="/dash"> Dashboard <span class="sr-only">(current)</span></a></li>
          <li ng-show="!isAuthenticated()"><a href="/#/login">Login </a></li>
          <li ng-show="!isAuthenticated()"><a href="/#/signup">Sign up</a></li>
-         <li ng-show="isAuthenticated()"><a href="/#/logout">Logout {{user.displayName | firstDisplayName}}</a></li>
+         <li ng-show="isAuthenticated()"><a href="/#/logout" ng-cloak>Logout {{user.displayName | firstDisplayName}}</a></li>
        </ul>
      </div><!-- /.navbar-collapse -->
     </nav>
@@ -65,7 +65,6 @@
     <script src="//maps.googleapis.com/maps/api/js?&amp;libraries=places"></script>
     <script src="/vendor/ng-file-upload.min.js"></script>
     <script src="/vendor/ng-file-upload-shim.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script> -->
 
     <!-- Application Code -->
     <script src="/app.js"></script>

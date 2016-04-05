@@ -29,7 +29,7 @@ Thumbs.db
 npm-debug.log
 
 # temp storage for trunk photos
-uploads
+uploads/
 
 # Sass #
 ###########
